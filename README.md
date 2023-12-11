@@ -2,7 +2,7 @@
 
 ## In english:
 
-This is a project based on practicing JS logic based on matrixes.
+This is a project based on practicing JS logic based on matrices.
 `index.js` is a Nonogram Project, and `sudoku.js` is a Sudoku Project.
 This project is still in progress.
 
