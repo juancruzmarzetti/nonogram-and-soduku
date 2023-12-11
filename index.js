@@ -16,7 +16,18 @@ function getMatrizBinariosRandom(x){
             let randomBoolean = getRandomBoolean();
             matriz[i].push(randomBoolean);
         };
+        if (!temp.includes(true)) {
+            let randomIndex = Math.floor(Math.random() * x);
+            temp[randomIndex] = true;
+        }
     };
+    for (let i = 0; i < x; i++) {
+        let columna = matriz.map(row => row[i]);
+        if (!columna.includes(true)) {
+            let randomIndex = Math.floor(Math.random() * x);
+            matriz[randomIndex][i] = true;
+        }
+    }
     return matriz;
 };
 
